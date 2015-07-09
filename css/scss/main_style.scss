@@ -17,11 +17,9 @@ $size2: 24px;
 		&:hover {
 			text-decoration: underline;
 		}
-
 }
 
-
-//nesting in Sass
+//nesting in Sass (avoid going past 4 levels of nesting whenever it is possible)
 .container {
 	//Using a Sass variable entailed by the $
 	text-align: center;
@@ -37,12 +35,16 @@ $size2: 24px;
 	}
 	.other-style {
 		$size2: 1em !global;
+
+		//Sass can have conditionals as this
+		@if $size2 == 1em {
+			background:white;
+		}
 		font-size: $size2;
 	}
 	.another-style {
 		font-size: $size2;
 	}
-
 }
 
 button {

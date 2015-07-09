@@ -7,25 +7,26 @@
   text-decoration: underline;
 }
 
-/* line 25, ../scss/main_style.scss */
+/* line 23, ../scss/main_style.scss */
 .container {
   text-align: center;
   background-color: #ccc;
 }
-/* line 33, ../scss/main_style.scss */
+/* line 31, ../scss/main_style.scss */
 .container .some-style {
   font-size: 2em;
 }
-/* line 38, ../scss/main_style.scss */
+/* line 36, ../scss/main_style.scss */
 .container .other-style {
+  background: white;
   font-size: 1em;
 }
-/* line 42, ../scss/main_style.scss */
+/* line 45, ../scss/main_style.scss */
 .container .another-style {
   font-size: 1em;
 }
 
-/* line 48, ../scss/main_style.scss */
+/* line 50, ../scss/main_style.scss */
 button {
   background: #2ecc71;
   border: 0;
@@ -35,8 +36,9 @@ button {
   display: inline-block;
   outline: 0;
   border-radius: 3px;
+  margin: 2em;
 }
-/* line 12, ../scss/_mixins.scss */
+/* line 13, ../scss/_mixins.scss */
 button:hover {
   background: #25a25a;
 }
