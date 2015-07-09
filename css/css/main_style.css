@@ -1,19 +1,31 @@
-/* line 11, ../scss/main_style.scss */
+/* line 13, ../scss/main_style.scss */
 .container a {
   font-size: 24px;
 }
-/* line 14, ../scss/main_style.scss */
+/* line 17, ../scss/main_style.scss */
 .container a:hover {
   text-decoration: underline;
 }
 
-/* line 22, ../scss/main_style.scss */
+/* line 25, ../scss/main_style.scss */
 .container {
   text-align: center;
   background-color: #ccc;
 }
+/* line 33, ../scss/main_style.scss */
+.container .some-style {
+  font-size: 2em;
+}
+/* line 38, ../scss/main_style.scss */
+.container .other-style {
+  font-size: 1em;
+}
+/* line 42, ../scss/main_style.scss */
+.container .another-style {
+  font-size: 1em;
+}
 
-/* line 32, ../scss/main_style.scss */
+/* line 48, ../scss/main_style.scss */
 button {
   background: #2ecc71;
   border: 0;

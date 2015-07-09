@@ -5,11 +5,14 @@
 
 
 //declaring a variable using the $ notation. !default means that this value will be used if nothing else is specified
-$size: 24px !default;
+$size1: 24px !default;
+
+$size2: 24px; 
 
 //rule that is only rendered if extended is as entailed by % 
 %link-style {
-		font-size: $size;
+		//This font size will be 24px because nothing else is set, and default is used then
+		font-size: $size1;
 		//&amp; is used to reference the parent
 		&:hover {
 			text-decoration: underline;
@@ -27,6 +30,19 @@ $size: 24px !default;
 		//Rules can be extended using @extend	
 		@extend %link-style;
 	}
+	.some-style {
+		//variables are dependant on scope but will overwrite default values anyway.
+		$size1: 2em;
+		font-size: $size1;
+	}
+	.other-style {
+		$size2: 1em !global;
+		font-size: $size2;
+	}
+	.another-style {
+		font-size: $size2;
+	}
+
 }
 
 button {
