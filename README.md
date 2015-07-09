@@ -8,8 +8,10 @@ skriv "gem install sass"
 skriv "gem install compass" 
 skriv "gem install css_parser" for statistikk om css klasser osv
 
-for å sette opp compass til å følge med på riktige filer må du legge ved en config.rb i prosjektet du jobber med.
+For å sette opp compass til å følge med på riktige filer må du legge ved en config.rb i prosjektet du jobber med.
+
 Noe ala:
+
 	http_path = "/"
 	css_dir = "css/css"
 	sass_dir = "/css/scss"
