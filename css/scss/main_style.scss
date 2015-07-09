@@ -1,0 +1,35 @@
+//importing other style files. .scss files prefixed with '_' will be included in the file as is without compilation and can be used 
+@import '_colors.scss';
+//the file extension is not needed
+@import '_mixins';
+
+
+//declaring a variable using the $ notation. !default means that this value will be used if nothing else is specified
+$size: 24px !default;
+
+//rule that is only rendered if extended is as entailed by % 
+%link-style {
+		font-size: $size;
+		//&amp; is used to reference the parent
+		&:hover {
+			text-decoration: underline;
+		}
+
+}
+
+
+//nesting in Sass
+.container {
+	//Using a Sass variable entailed by the $
+	text-align: center;
+	background-color: $borderColor;
+	a {
+		//Rules can be extended using @extend	
+		@extend %link-style;
+	}
+}
+
+button {
+	//Mixins are included using... well @include
+	@include button-style;
+}

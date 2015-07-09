@@ -1,0 +1,30 @@
+/* line 11, ../scss/main_style.scss */
+.container a {
+  font-size: 24px;
+}
+/* line 14, ../scss/main_style.scss */
+.container a:hover {
+  text-decoration: underline;
+}
+
+/* line 22, ../scss/main_style.scss */
+.container {
+  text-align: center;
+  background-color: #ccc;
+}
+
+/* line 32, ../scss/main_style.scss */
+button {
+  background: #2ecc71;
+  border: 0;
+  color: white;
+  font-size: 17px;
+  padding: 10px 30px;
+  display: inline-block;
+  outline: 0;
+  border-radius: 3px;
+}
+/* line 12, ../scss/_mixins.scss */
+button:hover {
+  background: #25a25a;
+}
