@@ -21,8 +21,9 @@ $size2: 24px;
 
 //nesting in Sass (avoid going past 4 levels of nesting whenever it is possible)
 .container {
-	//Using a Sass variable entailed by the $
+
 	text-align: center;
+	//Using a Sass variable entailed by the $
 	background-color: $borderColor;
 	a {
 		//Rules can be extended using @extend	
@@ -43,8 +44,13 @@ $size2: 24px;
 		font-size: $size2;
 	}
 	.another-style {
+		//$size2 will be 1em because it was set to the global scope in .other-style
 		font-size: $size2;
 	}
+}
+
+.grid {
+	@include grid-setup(4);
 }
 
 button {

@@ -1,4 +1,4 @@
 $borderColor: #ccc;
 $buttonColor: #2ecc71;
-//Sass has a huge set of functions
+//Sass has a huge set of functions darken is one of them. More can be found here: http://sass-lang.com/documentation/Sass/Script/Functions.html
 $buttonDark: darken($buttonColor, 10%);

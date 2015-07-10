@@ -14,3 +14,22 @@
 		background: $buttonDark;
 	}
 }
+
+//a mixin taking a parameter
+@mixin grid-setup($columnNumber) {
+	//for loops work like this, 'through' can be used instead of 'to' if the last value should be included
+	@for $i from 1 to $columnNumber {
+		//variables can be used in class names by using the following syntax
+		.col-#{$i} {
+			border: solid;
+			border-color: darken($borderColor, 20% *$i);
+			//using a function to calculate width
+			width: getColumnWidth(100%, $i);
+		}
+	}
+}
+
+//functions are declared as follows. Returning through the return statement
+@function getColumnWidth($width, $columns){
+    @return ($width / $columns);
+}

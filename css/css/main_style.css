@@ -12,21 +12,40 @@
   text-align: center;
   background-color: #ccc;
 }
-/* line 31, ../scss/main_style.scss */
+/* line 32, ../scss/main_style.scss */
 .container .some-style {
   font-size: 2em;
 }
-/* line 36, ../scss/main_style.scss */
+/* line 37, ../scss/main_style.scss */
 .container .other-style {
   background: white;
   font-size: 1em;
 }
-/* line 45, ../scss/main_style.scss */
+/* line 46, ../scss/main_style.scss */
 .container .another-style {
   font-size: 1em;
 }
 
-/* line 50, ../scss/main_style.scss */
+/* line 23, ../scss/_mixins.scss */
+.grid .col-1 {
+  border: solid;
+  border-color: #999999;
+  width: 100%;
+}
+/* line 23, ../scss/_mixins.scss */
+.grid .col-2 {
+  border: solid;
+  border-color: #666666;
+  width: 50%;
+}
+/* line 23, ../scss/_mixins.scss */
+.grid .col-3 {
+  border: solid;
+  border-color: #333333;
+  width: 33.33333%;
+}
+
+/* line 56, ../scss/main_style.scss */
 button {
   background: #2ecc71;
   border: 0;
