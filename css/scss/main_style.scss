@@ -50,6 +50,7 @@ $size2: 24px;
 }
 
 .grid {
+	//using a mixin with a parameter
 	@include grid-setup(4);
 }
 
