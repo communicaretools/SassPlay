@@ -3,9 +3,13 @@ Walking through various features of sass(Scss)
 Sette opp for Scss (Sass v.3+)
 
 Last ned Ruby 2.2.2 fra https://www.ruby-lang.org/en/documentation/installation/
+
 Åpne "Start Command promt with Ruby
+
 skriv "gem install sass"
+
 skriv "gem install compass" 
+
 skriv "gem install css_parser" for statistikk om css klasser osv
 
 For å sette opp compass til å følge med på riktige filer må du legge ved en config.rb i prosjektet du jobber med.
