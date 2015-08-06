@@ -47,7 +47,7 @@
   			text-align: center;
 			position: absolute;
 			//user variable to select the correct image
-			background-image: url(../images/#{$i}.png);
+			background-image: url($imagesPath + "#{$i}.png");
 			background-repeat: no-repeat;
 			left: converToPercent(calculateLeft($i));
 			top: converToPercent(calculateTop($i));

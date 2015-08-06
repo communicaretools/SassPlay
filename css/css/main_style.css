@@ -1,13 +1,13 @@
-/* line 15, ../scss/main_style.scss */
+/* line 17, ../scss/main_style.scss */
 .container a {
   font-size: 24px;
 }
-/* line 19, ../scss/main_style.scss */
+/* line 21, ../scss/main_style.scss */
 .container a:hover {
   text-decoration: underline;
 }
 
-/* line 25, ../scss/main_style.scss */
+/* line 27, ../scss/main_style.scss */
 .mood {
   width: 250px;
   height: 250px;
@@ -15,7 +15,7 @@
   position: relative;
 }
 
-/* line 34, ../scss/main_style.scss */
+/* line 36, ../scss/main_style.scss */
 .middle-mood {
   position: absolute;
   top: calc(50% - 16px);
@@ -23,7 +23,7 @@
   height: 32px;
   width: 32px;
   line-height: moodSize;
-  background-image: url(../images/1.png);
+  background-image: url("../images/1.png");
   background-repeat: no-repeat;
 }
 
@@ -39,7 +39,7 @@
   margin-top: -16px;
   text-align: center;
   position: absolute;
-  background-image: url(../images/1.png);
+  background-image: url("../images/1.png");
   background-repeat: no-repeat;
   left: 67.5%;
   top: 19.68911%;
@@ -56,7 +56,7 @@
   margin-top: -16px;
   text-align: center;
   position: absolute;
-  background-image: url(../images/2.png);
+  background-image: url("../images/2.png");
   background-repeat: no-repeat;
   left: 80.31089%;
   top: 32.5%;
@@ -73,7 +73,7 @@
   margin-top: -16px;
   text-align: center;
   position: absolute;
-  background-image: url(../images/3.png);
+  background-image: url("../images/3.png");
   background-repeat: no-repeat;
   left: 85%;
   top: 50.0%;
@@ -90,7 +90,7 @@
   margin-top: -16px;
   text-align: center;
   position: absolute;
-  background-image: url(../images/4.png);
+  background-image: url("../images/4.png");
   background-repeat: no-repeat;
   left: 80.31089%;
   top: 67.5%;
@@ -107,7 +107,7 @@
   margin-top: -16px;
   text-align: center;
   position: absolute;
-  background-image: url(../images/5.png);
+  background-image: url("../images/5.png");
   background-repeat: no-repeat;
   left: 67.5%;
   top: 80.31089%;
@@ -124,7 +124,7 @@
   margin-top: -16px;
   text-align: center;
   position: absolute;
-  background-image: url(../images/6.png);
+  background-image: url("../images/6.png");
   background-repeat: no-repeat;
   left: 50.0%;
   top: 85%;
@@ -141,7 +141,7 @@
   margin-top: -16px;
   text-align: center;
   position: absolute;
-  background-image: url(../images/7.png);
+  background-image: url("../images/7.png");
   background-repeat: no-repeat;
   left: 32.5%;
   top: 80.31089%;
@@ -158,7 +158,7 @@
   margin-top: -16px;
   text-align: center;
   position: absolute;
-  background-image: url(../images/8.png);
+  background-image: url("../images/8.png");
   background-repeat: no-repeat;
   left: 19.68911%;
   top: 67.5%;
@@ -175,7 +175,7 @@
   margin-top: -16px;
   text-align: center;
   position: absolute;
-  background-image: url(../images/9.png);
+  background-image: url("../images/9.png");
   background-repeat: no-repeat;
   left: 15%;
   top: 50.0%;
@@ -192,7 +192,7 @@
   margin-top: -16px;
   text-align: center;
   position: absolute;
-  background-image: url(../images/10.png);
+  background-image: url("../images/10.png");
   background-repeat: no-repeat;
   left: 19.68911%;
   top: 32.5%;
@@ -209,7 +209,7 @@
   margin-top: -16px;
   text-align: center;
   position: absolute;
-  background-image: url(../images/11.png);
+  background-image: url("../images/11.png");
   background-repeat: no-repeat;
   left: 32.5%;
   top: 19.68911%;
@@ -226,27 +226,27 @@
   margin-top: -16px;
   text-align: center;
   position: absolute;
-  background-image: url(../images/12.png);
+  background-image: url("../images/12.png");
   background-repeat: no-repeat;
   left: 50.0%;
   top: 15%;
 }
 
-/* line 52, ../scss/main_style.scss */
+/* line 54, ../scss/main_style.scss */
 .container {
   text-align: center;
   background-color: #ccc;
 }
-/* line 61, ../scss/main_style.scss */
+/* line 63, ../scss/main_style.scss */
 .container .some-style {
   font-size: 2em;
 }
-/* line 66, ../scss/main_style.scss */
+/* line 68, ../scss/main_style.scss */
 .container .other-style {
   background: white;
   font-size: 1em;
 }
-/* line 75, ../scss/main_style.scss */
+/* line 77, ../scss/main_style.scss */
 .container .another-style {
   font-size: 1em;
 }
@@ -270,7 +270,7 @@
   width: 33.33333%;
 }
 
-/* line 86, ../scss/main_style.scss */
+/* line 88, ../scss/main_style.scss */
 button {
   background: #2ecc71;
   border: 0;

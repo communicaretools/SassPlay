@@ -11,6 +11,8 @@ $size2: 24px;
 
 $moodSize: 32px; 
 
+$imagesPath: "../images/";
+
 //rule that is only rendered if extended is as entailed by % 
 %link-style {
 		//This font size will be 24px because nothing else is set, and default is used then
@@ -38,7 +40,7 @@ $moodSize: 32px;
   height: $moodSize;
   width: $moodSize;
   line-height: moodSize;
-  background-image: url(../images/1.png);
+  background-image: url($imagesPath + "1.png");
   background-repeat: no-repeat;
 }
 
