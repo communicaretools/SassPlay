@@ -7,7 +7,9 @@
 //declaring a variable using the $ notation. !default means that this value will be used if nothing else is specified
 $size1: 24px !default;
 
-$size2: 24px; 
+$size2: 24px;
+
+$moodSize: 32px; 
 
 //rule that is only rendered if extended is as entailed by % 
 %link-style {
@@ -23,17 +25,19 @@ $size2: 24px;
 %mood-style {
   width: 250px;
   height: 250px;
+  //align center of the div
   margin: 0 auto;
+  //make sure everything stays within the div
   position: relative;
 }
 
-.menu-button {
+.middle-mood {
   position: absolute;
   top: calc(50% - 16px);
   left: calc(50% - 16px);
-  height: 32px;
-  width: 32px;
-  line-height: 32px;
+  height: $moodSize;
+  width: $moodSize;
+  line-height: moodSize;
   background-image: url(../images/1.png);
   background-repeat: no-repeat;
 }

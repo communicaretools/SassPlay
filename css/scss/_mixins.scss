@@ -35,13 +35,18 @@
 			text-decoration: none;
   			color: white;
   			display: block;
-  			height: 32px;
-  			width: 32px;
-  			line-height: 32px;
-  			margin-left: -16px;
-		    margin-top: -16px;
+  			//height of the smiley
+  			height: $moodSize;
+  			//height of the smiley
+  			width: $moodSize;
+  			line-height: $moodSize;
+  			//center the image
+  			margin-left: -$moodSize/2;
+			//center the image
+		    margin-top: -$moodSize/2;
   			text-align: center;
 			position: absolute;
+			//user variable to select the correct image
 			background-image: url(../images/#{$i}.png);
 			background-repeat: no-repeat;
 			left: converToPercent(calculateLeft($i));
@@ -56,14 +61,17 @@
     @return ($width / $columns);
 }
 
+//using compass functions sin($number) and pi()
 @function calculateLeft($i){
 	@return 50-35*cos(pi()*(-0.5 - $i/6));
 }
 
+//using compass functions sin($number) and pi()
 @function calculateTop($i){
 	@return 50+35*sin(pi()*(-0.5 - $i/6));
 }
 
+//to convert a numerical operation to a unit you need to multiply the result with the unit
 @function converToPercent($number){
 	@return $number*1%;
 }
