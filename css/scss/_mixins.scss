@@ -29,7 +29,41 @@
 	}
 }
 
+@mixin moods {
+	@for $i from 1 through 12 {
+		.mood-#{$i} {
+			text-decoration: none;
+  			color: white;
+  			display: block;
+  			height: 32px;
+  			width: 32px;
+  			line-height: 32px;
+  			margin-left: -16px;
+		    margin-top: -16px;
+  			text-align: center;
+			position: absolute;
+			background-image: url(../images/#{$i}.png);
+			background-repeat: no-repeat;
+			left: converToPercent(calculateLeft($i));
+			top: converToPercent(calculateTop($i));
+		}
+	}
+}
+
+
 //functions are declared as follows. Returning through the return statement
 @function getColumnWidth($width, $columns){
     @return ($width / $columns);
+}
+
+@function calculateLeft($i){
+	@return 50-35*cos(pi()*(-0.5 - $i/6));
+}
+
+@function calculateTop($i){
+	@return 50+35*sin(pi()*(-0.5 - $i/6));
+}
+
+@function converToPercent($number){
+	@return $number*1%;
 }

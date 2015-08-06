@@ -19,6 +19,31 @@ $size2: 24px;
 		}
 }
 
+
+%mood-style {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.menu-button {
+  position: absolute;
+  top: calc(50% - 16px);
+  left: calc(50% - 16px);
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  background-image: url(../images/1.png);
+  background-repeat: no-repeat;
+}
+
+.mood {
+	@extend %mood-style;
+	@include moods;
+
+}
+
 //nesting in Sass (avoid going past 4 levels of nesting whenever it is possible)
 .container {
 
